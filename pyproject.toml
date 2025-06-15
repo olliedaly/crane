@@ -1,0 +1,24 @@
+[project]
+name = "crane"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "ollie",email = "olliedaly1995@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dbt-core (>=1.9.8,<2.0.0)",
+    "dbt-bigquery (>=1.9.2,<2.0.0)",
+    "jupyterlab (>=4.4.3,<5.0.0)",
+    "polars (>=1.30.0,<2.0.0)",
+    "matplotlib (>=3.10.3,<4.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "crane", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
