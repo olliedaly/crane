@@ -31,9 +31,6 @@ clean-targets:         # directories to be removed by `dbt clean`
 # files using the `{{ config(...) }}` macro.
 models:
   dbt_crane:
-    # Example models (for testing/learning)
-    example:
-      +materialized: view
     # Staging layer - clean and standardize raw data  
     staging:
       +schema: staging
